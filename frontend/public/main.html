@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BahasaByte</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="banner">BahasaByte</div>
+        <div class="chat-container">
+            <div class="sidebar">
+                <h2>Your History</h2>
+                <ul id="history-list"></ul>
+                <button id="clear-history-btn">Clear History</button>
+                <a href="{{ url_for('auth.logout') }}" class="logout-link">Logout</a>
+            </div>
+
+            <div class="chat-window">
+                <div id="chat-output" class="chat-output"></div>
+                <form id="text-form" onsubmit="processText(event)">
+                    <input type="text" id="input_text" placeholder="Enter text" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='TextInput.js') }}"></script>
+</body>
+
+</html>
