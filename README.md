@@ -15,7 +15,7 @@ This project uses the following Models:
 ## Installation
 
 1. Clone the Repository:
-        git clone <https://github.com/mxteng03/FinalYearProject>
+        git clone <https://github.com/mxteng03/FinalYearProjectNLP>
         cd FinalYearProject
 
 2. Set Up the Virtual Environment:
